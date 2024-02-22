@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <Container maxW="container.xl" p={4}>
       <VStack spacing={8}>
-        <Flex justifyContent="space-between" w="full" py={5}>
+        <Flex direction={{ base: "column", md: "row" }} justifyContent="space-between" w="full" py={5} align="center">
           <Heading as="h1" size="xl">
             Andrew Johnson
           </Heading>
@@ -33,8 +33,8 @@ const Index = () => {
           </HStack>
         </Flex>
         <Box w="full" bg="gray.100" p={5} rounded="md" shadow="md">
-          <Flex alignItems="center" flexDirection={{ base: "column", md: "row" }}>
-            <Image borderRadius="full" boxSize="150px" src="https://images.unsplash.com/photo-1585075658856-16a6da0a6d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxBbmRyZXclMjBKb2huc29uJTIwUG9ydHJhaXR8ZW58MHx8fHwxNzA4NjIxNjAxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Andrew Johnson" mr={8} />
+          <Flex direction={{ base: "column", md: "row" }} alignItems="center" w="full" mb={{ base: 4, md: 0 }}>
+            <Image borderRadius="full" boxSize={{ base: "100px", md: "150px" }} src="https://images.unsplash.com/photo-1585075658856-16a6da0a6d4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxBbmRyZXclMjBKb2huc29uJTIwUG9ydHJhaXR8ZW58MHx8fHwxNzA4NjIxNjAxfDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Andrew Johnson" mr={{ base: 0, md: 8 }} mb={{ base: 4, md: 0 }} />
             <Box flex={1}>
               <Heading as="h3" size="lg">
                 About Me
